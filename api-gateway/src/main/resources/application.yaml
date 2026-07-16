@@ -19,7 +19,7 @@ spring:
           # lb:// le dice al Gateway: "Busca en Eureka el servicio llamado ms-user-auth-register"
           uri: lb://MS-USER-AUTH-REGISTER
           predicates:
-            - Path=/api/v1/**, /oauth2/**, /.well-known/**, /login, /login**
+            - Path=/api/v1/**, /oauth2/**, /connect/**, /.well-known/**, /login, /login**
         - id: ms-prestamos-estadisticas-routes
           uri: lb://MS-PRESTAMOS
           predicates:
